@@ -50,7 +50,7 @@ This project helps to digitize and manage the administrative tasks of a prison. 
 ```
 ---
 By 
-Abinaya Sri M
-Oviyashree C J
-Janani S
-KaviPriya R
+- Abinaya Sri M
+- Oviyashree C J
+- Janani S
+- KaviPriya R
