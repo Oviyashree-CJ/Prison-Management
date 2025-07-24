@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prison Database Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Section -->
+    <div id="login">
+        <h2>Login</h2>
+        <input type="password" id="password" placeholder="Enter password">
+        <button id="login-btn" onclick="login()">Login</button>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboard" style="display: none;">
+        <center><h1>Prison Dashboard</h1></center> 
+        
+        <!-- Query Buttons -->
+        <div id="query-section">
+            <center><h2>Menu to retrieve information</h2></center>
+            <div class="query-buttons">
+                <script>
+                    const arr = [
+                        "List of prisoners",
+                        "List of guards",
+                        "Prisoners (more than 5 years)",
+                        "List of visits",
+                        "List of users",
+                        "List of prisoner crimes",
+                        "List of health records",
+                        "List of crime types",
+                        "List of cells",
+                        "Total prisoners count",
+                        "Number of prisoners involved in each type of crime",
+                        "Guards working at afternoon",
+                        "Maximum sentence by prisoner",
+                        "Crime frequency by type",
+                        "Visits after Jan 1, 2024",
+                        "Prisoners with High blood pressure",
+                        "Visit count per prisoner",
+                        "Cell occupancy details",
+                        "High-severity crime types",
+                        "List of admin usernames"
+                    ];
+
+                    for (let i = 1; i <= 20; i++) {
+                        document.write(`<button onclick="fetchQuery(${i})">${arr[i - 1]}</button>`);
+                    }
+                </script>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-section">
+            <h2>Query Results</h2>
+            <div id="results"></div> <!-- Container for the table -->
+        </div>
+
+        <!-- CRUD Operation Buttons -->
+        <div id="crud-section">
+            <button id="crud-btn"><a href="crud.html" style="text-decoration: none; color: white;">Click to insert new data</a></button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

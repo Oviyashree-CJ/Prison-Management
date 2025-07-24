@@ -1,0 +1,154 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+#login, #dashboard {
+    margin: 30px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    background: linear-gradient(135deg, #66b3ff, #ff99cc);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Login Section */
+#login h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#password {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* Login Button */
+button#login-btn {
+    border: none;
+    font-size: 1.1em;
+    width: auto;
+    padding: 12px 30px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #82c536;
+    color: white;
+}
+
+button#login-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Query Buttons */
+.query-buttons button {
+    background-color: #FF5733;  /* Color for Query buttons */
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    display: inline-block;
+    width: auto;
+    padding: 12px 25px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.query-buttons button:hover {
+    background-color: #e13412;  /* Darker color on hover */
+    transform: scale(1.05);
+}
+
+/* Go to CRUD Operations Button */
+button#crud-btn {
+    background-color: #4CAF50;  /* Green color for CRUD button */
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    padding: 12px 30px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button#crud-btn:hover {
+    background-color: #45a049;  /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+/* Query Section */
+.query-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#crud-section {
+    margin-top: 30px;
+}
+
+#results-section table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;  /* Ensures no spacing between table cells */
+}
+
+#results-section th, #results-section td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1em;
+}
+
+#results-section th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+#results-section td {
+    background-color: #f9f9f9;
+}
+
+#results-section tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+#results-section tr:hover td {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #login, #dashboard {
+        width: 95%;
+    }
+}
